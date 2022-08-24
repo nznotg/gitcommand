@@ -1,0 +1,17 @@
+[ pull ]
+- 특정 branch 만 pull 할 때
+git pull origin <branchName>
+
+[ fetch ]
+- remote branch 에서 소스코드를 가져오고 pull은 하지 않음
+1. git fetch remote branch
+fetch를 받으면 HEAD local branch가 임시로 생성되고 해당 브랜치와 remote branch 간의 다른 점을 확인해야 한다.
+
+2. git diff HEAD origin/remotebranch
+HEAD branch 와 remote branch 간의 다른 점을 확인하여 수정한다.
+
+3. git merge origin/remotebranch
+수정을 하였으면 remotebranch와 merge(병합)한다.
+
+4. git log --decoreate --all --oneline / --graph
+Head 와 remote branch 가 같은 commit을 가리키는지 확인하여 병합을 마무리 한다.

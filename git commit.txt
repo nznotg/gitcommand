@@ -1,0 +1,18 @@
+[ commit message 작성 ]
+
+1. cli
+-m : 커밋 메시지 작성
+	ex) git commit -m '~~~'
+-a / -all : 모든 파일을 자동으로 commit(쓰지 않는 걸 추천)
+	ex) git commit -a -m '~~~~'
+--amend : 푸쉬되지 않은 마지막 커밋 메시지 수정
+	ex) git commit --amend -m '~~~~'
+
+2. 좋은 커밋 메시지 작성방법
+FEAT : 새로운 기능 추가(feature)
+FIX : 버그 수정
+DOCS : 문서 수정
+STYLE : 스타일 관련 기능(코드 포맷, 세미콜론 누락, 코드 자체의 변경이 없는 경우)
+REFECTOR : 코드 리팩토링
+TEST : 테스트 코드, 리팩토링 테스트 코드 추가
+CHORE : 빌드 업무 수정, 패키지 매니저 수정(ex .gitignore 수정 같은)

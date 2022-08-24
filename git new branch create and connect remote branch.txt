@@ -1,0 +1,5 @@
+How to connect remote branch from that new local branch.
+
+1. checkout -b {New Branch}
+2. remote add origin {Remote Repository}
+3. git push origin {Branch Name}

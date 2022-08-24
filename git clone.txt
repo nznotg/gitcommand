@@ -1,0 +1,2 @@
+1. 특정 브랜치만 clone
+git clone -b <BRANCH NAME> --single-branch <URL>
