@@ -1,2 +1,12 @@
 conflict 로 인한 merging 상태일 때 해결
 
+[ why occur conflict ]
+The conflict occur when git pull or merge command run each other branch,
+there are exists diffrent code or logic.
+
+[ how to resolve conflict, merging ]
+1. find conflict code then refactoring.
+2. git add .
+3. git commit ~
+
+then resolve conflict success.
