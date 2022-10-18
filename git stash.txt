@@ -1,0 +1,32 @@
+git stash
+: 어떤 작업 중 다른 업무 요청이 들어와 기존 작업을 멈추고 Branch를 변경해야 할 때,
+마무리되지 않은 작업을 commit 하는 것 대신 stash를 사용한다.
+
+종료되지 않은 작업을 스택에 잠시 저장할 수 있도록 하는 명령어
+
+working directory or traked 상태인 파일을 git stash 할 수 있기 때문에
+해당되지 않는 파일이 존재(git status)한다면 git add 명령어로 추가해준다.
+
+1. command
+- git stash / git stash save
+해당 명령어를 통해 commit 없이 브랜치 변경이 가능해진다.
+
+- git stash list : stash 목록 확인
+여려번 stash를 했을 경우 목록 확인 가능하다.
+
+- git stash apply : 가장 최근 stash를 가져와 적용
+- git stash apply {stash_name} : stash_name 에 해당하는 stash를 적용한다.
+*** 이때 --index 옵션을 주어야 기존 상태로 원복이 가능하다.
+
+- git stash drop : stash delete
+apply 명령어는 적용만 해줄 뿐 적용한 stash 데이터를 삭제해주지 않는다.(스택에 여전히 남아있음)
+스택에 남아있는 stash를 위 명령어로 제거할 수 있다.
+
+** - git stash pop : stash + drop 을 합친 명령어
+
+# stash 되돌리기
+- git stash show -p | git apply -R 
+: 가장 최근의 stash를 사용하여 패치를 만들고 그것을 거꾸로 적용
+
+- git stash show -p {stash_name} | git apply -R
+: stash_name 에 해당하는 stash를 이용하여 거꾸로 적용 
