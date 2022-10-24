@@ -15,3 +15,21 @@ HEAD branch 와 remote branch 간의 다른 점을 확인하여 수정한다.
 
 4. git log --decoreate --all --oneline / --graph
 Head 와 remote branch 가 같은 commit을 가리키는지 확인하여 병합을 마무리 한다.
+
+[ git fetch {option} ]
+1. git fetch : default remote branch에서 fetch
+2. git fetch -all : fetch from all remotes
+3. git fetch {branch_name} : fetch from the branch_name
+* git fetch remote1 remote2 remote3.. : fetch from multiple repositories
+4. git fetch {repository} {branch_name} : fetch from the branch of the repository
+
+
+[ fetch 사용법 ]
+READEME.md 파일에 마지막 한 줄을 추가하고 git push origin main 에 push 했다고 가정.
+다른 사용자가 해당 branch를 fetch -> git diff 를 수행하면 아래와 같이 나옴
+====
+git diff main orign/main
+...소스 비교하여 다른 점 알려줌...
+====
+다른 점을 확인 후
+git merge FETCH_HEAD를 하면 해당 내용이 merge 된다.
