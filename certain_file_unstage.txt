@@ -1,0 +1,3 @@
+특정 파일을 임시적으로 commit에서 제외시킬 때 사용하는 cli
+
+git restore --staged FILE_NAME
