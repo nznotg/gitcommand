@@ -1,0 +1,11 @@
+How to use git alias
+
+1. set alias
+$ git config --global alios.<shortcut> <origin cli>
+
+2. show alias list
+q$ git config --get-regexp ^alias
+
+3. useful alias setting
+- git log detail
+log --decorate --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
