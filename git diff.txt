@@ -15,3 +15,5 @@ git add . 후 staging area 로 올라간 소스 코드로 비교한다.
 브린치간 특정 파일 비교
 
 
+4. git diff --name-status <BRANCH_NAME>
+비교 브랜치와 다른 내용을 갖는 파일명(path 포함)만 보여줌
