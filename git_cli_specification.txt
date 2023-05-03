@@ -1,8 +1,0 @@
-Git
-
-[ Pull ]
-* 다른 branch에서 pull 받기
-- add / commit 선진행
-- git pull <branch명>
-! 로컬 branch 간의 pull : git pull . <branch명>
-
