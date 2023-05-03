@@ -1,0 +1,6 @@
+How to revert merge commit
+1. git show <COMMIT_HASH> // merged commit hash
+- ... merge : hash1 hash2
+
+2. git revert -m 1(or 2) <COMMIT_HASH>
+- git show에서 확인한 hash1 or hash2 중 선택한 commit으로 revert 해준다.
