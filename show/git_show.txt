@@ -1,0 +1,7 @@
+'git show' command can show git-object detail info
+
+like 1) commit info
+git show <COMMIT_HASH>
+- commit basic info(auth, create date, etc...
+- commit massage
+- insertions or deletions a file contents.
