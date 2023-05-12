@@ -17,3 +17,8 @@ git add . 후 staging area 로 올라간 소스 코드로 비교한다.
 
 4. git diff --name-status <BRANCH_NAME>
 비교 브랜치와 다른 내용을 갖는 파일명(path 포함)만 보여줌
+
+5. Exclude file from git diff
+브랜치간 비교 시 특정 파일은 제외하기
+git diff <BRANCH1>..<BRANCH2> ":(excluded)<file_name or file_path>"
+

@@ -1,10 +1,10 @@
 How to use git alias
 
 1. set alias
-$ git config --global alios.<shortcut> <origin cli>
+$ git config --global alias.<shortcut> "<origin cli>"
 
 2. show alias list
-q$ git config --get-regexp ^alias
+$ git config --get-regexp ^alias
 
 3. useful alias setting
 - git log detail
