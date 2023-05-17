@@ -1,0 +1,5 @@
+git의 파일 조작(특장 파일 되돌리기, 최신 HEAD commit 내역으로 되돌리기 등)
+- git restore <FILE_PATH>
+   : 특정 파일을 HEAD commit 으로 되돌리기
+- 
+
