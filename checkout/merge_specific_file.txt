@@ -1,0 +1,9 @@
+다른 branch에 있는 특정 file만 merge 할 때 사용
+'merge' keyword를 사용하진 않으나 다음의 command로 특정 file만 merge 할 수 있다.
+
+1. 병합할 branch로 switch
+git switch <merge target BRANCH_NAME>
+
+2. file을 갖고 있는 branch로 checkout 
+git checkout -p <file을 갖고있는 BRANCH_NAME> file.java
+
