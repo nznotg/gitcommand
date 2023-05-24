@@ -1,0 +1,12 @@
+이미 두개 이상의 브랜치가 merge된 commit을 revert 시킬 때
+
+mainline이라는 게 존재함
+revert 시 어떤 line을 mainline으로 사용할 지 options을 줘야한다.
+
+# git revert --mainline [남길 line] [병합 commit]
+(ex) git revert --mainline 1 cb70c2d
+
+이후 conflict 가 발생 시 merge conflict 해결방법과 동일하게 source 수정 후
+git revert --continue 
+
+
